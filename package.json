@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-scaffold",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [
+    "vite",
+    "tanstack",
+    "tailwindcss",
+    "drizzle",
+    "hono",
+    "fullstack"
+  ],
+  "author": "leozhang621@gmail.com",
+  "license": "MIT",
+  "packageManager": "pnpm@10.33.3",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "turbo": "^2.10.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "lightningcss"
+    ]
+  }
+}
