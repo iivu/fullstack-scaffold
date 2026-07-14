@@ -1,3 +1,4 @@
+import { Toaster } from '@r/ui';
 import themeCss from '@r/ui/theme.css?url';
 import { TanStackDevtools } from '@tanstack/react-devtools';
 import type { QueryClient } from '@tanstack/react-query';
@@ -41,6 +42,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         {children}
+        <Toaster />
         <TanStackDevtools
           config={{
             position: 'bottom-right',
