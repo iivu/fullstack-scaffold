@@ -26,7 +26,9 @@
     "@base-ui/react": "catalog:",
     "class-variance-authority": "catalog:",
     "clsx": "catalog:",
+    "date-fns": "catalog:",
     "lucide-react": "catalog:",
+    "react-day-picker": "catalog:",
     "shadcn": "catalog:",
     "tailwind-merge": "catalog:",
     "tailwindcss": "catalog:",
@@ -34,8 +36,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "typescript": "catalog:",
     "@types/react": "catalog:",
-    "@types/react-dom": "catalog:"
+    "@types/react-dom": "catalog:",
+    "typescript": "catalog:"
   }
 }
