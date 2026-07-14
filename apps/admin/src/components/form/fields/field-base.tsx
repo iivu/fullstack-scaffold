@@ -1,4 +1,4 @@
-import { Field, FieldDescription, FieldError, FieldLabel, cn } from '@r/ui';
+import { cn, Field, FieldDescription, FieldError, FieldLabel } from '@r/ui';
 
 import { useFieldContext } from '../context';
 

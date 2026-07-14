@@ -1,5 +1,5 @@
+import { cn, Input, Textarea } from '@r/ui';
 import { useCallback } from 'react';
-import { Input, Textarea ,cn} from '@r/ui';
 
 import { useFieldContext } from '../context';
 import { FieldBase, type FieldBaseProps } from './field-base';
@@ -24,7 +24,7 @@ export function FieldText({ type = 'text', inputType = 'input', placeholder, cla
       const value = e.target.value;
       field.handleChange(isNumberInput ? Number(value) : value);
     },
-    [field, isNumberInput]
+    [field, isNumberInput],
   );
 
   return (

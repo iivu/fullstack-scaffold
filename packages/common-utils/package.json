@@ -1,36 +1,22 @@
 {
-  "name": "@r/ui",
+  "name": "@r/common-utils",
   "version": "1.0.0",
-  "imports": {
-    "#components/*": "./src/components/*.tsx",
-    "#lib/*": "./src/lib/*.ts",
-    "#hooks/*": "./src/hooks/*.ts"
-  },
+  "description": "",
+  "private": true,
   "exports": {
     ".": "./src/index.ts",
-    "./theme.css": "./src/theme.css",
     "./package.json": "./package.json"
   },
   "scripts": {
     "check-write": "biome check --write",
     "check": "biome check"
   },
-  "private": "true",
+  "keywords": [],
   "author": "leozhang621@gmail.com",
   "packageManager": "pnpm@10.33.3",
   "peerDependencies": {
     "react": "catalog:",
     "react-dom": "catalog:"
-  },
-  "dependencies": {
-    "@base-ui/react": "catalog:",
-    "class-variance-authority": "catalog:",
-    "clsx": "catalog:",
-    "lucide-react": "catalog:",
-    "shadcn": "catalog:",
-    "tailwind-merge": "catalog:",
-    "tailwindcss": "catalog:",
-    "tw-animate-css": "catalog:"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",

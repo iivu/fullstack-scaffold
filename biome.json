@@ -34,6 +34,10 @@
       },
       "correctness": {
         "noUnusedImports": { "level": "off" }
+      },
+      "a11y": {
+        "useSemanticElements": { "level": "info" },
+        "noLabelWithoutControl": { "level": "info" }
       }
 		}
 	},

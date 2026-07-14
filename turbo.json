@@ -10,11 +10,8 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
-    },
-    "check-and-write": {
-      "dependsOn": ["^check-and-write"]
+    "check-write": {
+      "dependsOn": ["^check-write"]
     },
     "check": {
       "dependsOn": ["^check"]

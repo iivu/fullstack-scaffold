@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@r/ui":"workspace:*",
+    "@r/common-utils": "workspace:*",
     "@faker-js/faker": "catalog:",
     "@tailwindcss/vite": "catalog:",
     "@tanstack/match-sorter-utils": "catalog:",
