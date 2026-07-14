@@ -37,7 +37,7 @@
       },
       "a11y": {
         "useSemanticElements": { "level": "info" },
-        "noLabelWithoutControl": { "level": "info" },
+        "noLabelWithoutControl": { "level": "off" },
         "useFocusableInteractive": { "level": "info" }
       }
 		}
