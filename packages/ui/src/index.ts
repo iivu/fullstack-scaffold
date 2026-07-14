@@ -7,6 +7,7 @@ export * from './components/ui/date-picker';
 export * from './components/ui/dropdown-menu';
 export * from './components/ui/field';
 export * from './components/ui/input';
+export * from './components/ui/pagination';
 export * from './components/ui/popover';
 export * from './components/ui/range-date-picker';
 export * from './components/ui/select';
