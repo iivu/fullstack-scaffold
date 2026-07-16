@@ -17,6 +17,7 @@ const config = defineConfig(({ mode, command }) => {
   const env = loadEnv(mode, process.cwd(), '');
   log('isBuild', isBuild);
   log('VITE_APP_NAME', env.VITE_APP_NAME);
+  log('VITE_APP_THEME_KEY', env.VITE_APP_THEME_KEY);
   return {
     base: isBuild ? '' : '/',
     resolve: { tsconfigPaths: true },

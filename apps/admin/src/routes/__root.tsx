@@ -5,6 +5,7 @@ import type { QueryClient } from '@tanstack/react-query';
 import { createRootRouteWithContext, HeadContent, Outlet, Scripts } from '@tanstack/react-router';
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 import { ConfirmDialogProvider } from '#/providers/confirm-dialog-provider';
+import { ThemeProvider } from '#/providers/theme-provider';
 import TanStackQueryDevtools from '../integrations/tanstack-query/devtools';
 
 interface MyRouterContext {
@@ -65,7 +66,9 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 function RootComponent() {
   return (
     <ConfirmDialogProvider>
-      <Outlet />
+      <ThemeProvider>
+        <Outlet />
+      </ThemeProvider>
     </ConfirmDialogProvider>
   );
 }
