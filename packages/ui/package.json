@@ -28,7 +28,7 @@
     "clsx": "catalog:",
     "date-fns": "catalog:",
     "lucide-react": "catalog:",
-    "next-themes": "^0.4.6",
+    "next-themes": "catalog:",
     "react-day-picker": "catalog:",
     "shadcn": "catalog:",
     "sonner": "catalog:",
