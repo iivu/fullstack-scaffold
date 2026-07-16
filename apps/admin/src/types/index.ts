@@ -1,1 +1,1 @@
-export type UserProfile = {}
+export type UserProfile = {};

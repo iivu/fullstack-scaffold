@@ -1,9 +1,9 @@
 import type { PropsWithChildren } from 'react';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { useConfirm } from '#/providers/confirm-dialog-provider';
-import type { UserProfile} from '#/types';
 import * as api from '#/services/api';
 import { clearToken, getToken, setToken } from '#/shared/token';
+import type { UserProfile } from '#/types';
 
 export type AuthStatus = 'checking' | 'authenticated' | 'unauthenticated';
 

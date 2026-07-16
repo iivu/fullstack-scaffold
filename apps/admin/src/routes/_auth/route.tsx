@@ -4,6 +4,4 @@ export const Route = createFileRoute('/_auth')({
   component: AuthRouteLayout,
 });
 
-function AuthRouteLayout() {
-  
-}
+function AuthRouteLayout() {}
