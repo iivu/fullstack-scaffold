@@ -1,5 +1,10 @@
 import { cn } from '@r/ui';
-import { type ColumnDef, getCoreRowModel, type TableMeta, useReactTable } from '@tanstack/react-table';
+import {
+  type ColumnDef,
+  getCoreRowModel,
+  type TableMeta,
+  useReactTable,
+} from '@tanstack/react-table';
 import type { ReactNode } from 'react';
 import { Pagination } from '#/components/pagination';
 import { DataTableRenderer } from './table-renderer';
@@ -36,7 +41,8 @@ export function DataTable<TData>({
   tableClassName,
   emptyText,
 }: DataTableProps<TData>) {
-  const { getPersistedViewOptions, ViewOptionsPersistenceHolder } = useViewOptionsPersistence(viewOptionsStorageKey);
+  const { getPersistedViewOptions, ViewOptionsPersistenceHolder } =
+    useViewOptionsPersistence(viewOptionsStorageKey);
   const table = useReactTable<TData>({
     columns,
     data,
@@ -48,14 +54,25 @@ export function DataTable<TData>({
   });
 
   return (
-    <div className={cn('flex flex-col', className)}>
+    <>
       <div className="flex items-center mb-4 gap-2">
         {header}
         <TableViewOptions table={table} />
         <ViewOptionsPersistenceHolder table={table} />
       </div>
-      <DataTableRenderer table={table} className="mb-4" tableClassName={tableClassName} emptyText={emptyText} />
-      <Pagination className="mt-auto" size={pageSize} currentPage={page} total={total} onPageChange={onPageChange} />
-    </div>
+      <DataTableRenderer
+        table={table}
+        className="mb-4"
+        tableClassName={tableClassName}
+        emptyText={emptyText}
+      />
+      <Pagination
+        className="w-fit shrink-0 rounded-full border bg-background px-2 py-1.5 shadow-lg sticky bottom-4 mt-4"
+        size={pageSize}
+        currentPage={page}
+        total={total}
+        onPageChange={onPageChange}
+      />
+    </>
   );
 }
