@@ -1,26 +1,20 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
-
+import app from '#/app';
 import { appEnv } from '#/env';
-
-const app = new Hono();
-
-app.get('/', c => {
-  return c.text('Hello Hono!');
-});
 
 const honoServer = serve(
   {
     fetch: app.fetch,
     port: appEnv.PORT ?? 3000,
   },
-  info => {
+  (info) => {
     console.log(`Server is running on http://localhost:${info.port}`);
   },
 );
 
 function gracefulShutdown() {
-  honoServer.close(err => {
+  honoServer.close((err) => {
     if (err) {
       console.error('Error during server shutdown:', err);
       process.exit(1);

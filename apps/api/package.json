@@ -4,9 +4,14 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc && tsdown && node scripts/format-package-json.js",
-    "start": "node dist/index.mjs"
+    "start": "node dist/index.mjs",
+    "lint": "biome lint",
+    "check": "biome check",
+    "check-write": "biome check --write",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@r/contracts": "workspace:*",
     "@hono/node-server": "catalog:",
     "hono": "catalog:",
     "dotenv": "catalog:",
@@ -15,6 +20,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
+    "@biomejs/biome": "catalog:",
     "@types/node": "catalog:",
     "tsdown": "catalog:",
     "tsx": "catalog:",
