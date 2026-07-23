@@ -11,20 +11,21 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@r/contracts": "workspace:*",
     "@hono/node-server": "catalog:",
-    "hono": "catalog:",
+    "@hono/zod-validator": "catalog:",
+    "@r/contracts": "workspace:*",
     "dotenv": "catalog:",
     "drizzle-orm": "catalog:",
+    "hono": "catalog:",
     "mysql2": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
     "@types/node": "catalog:",
+    "drizzle-kit": "catalog:",
     "tsdown": "catalog:",
     "tsx": "catalog:",
-    "typescript": "catalog:",
-    "drizzle-kit": "catalog:"
+    "typescript": "catalog:"
   }
 }
